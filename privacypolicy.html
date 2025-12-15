@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn How to Delete SpendRep's Backup Data and Revoke its Google Drive Access</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
+        
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <div class="text-3xl sm:text-4xl font-extrabold text-indigo-700 mb-2">
+                Learn How to Delete SpendRep's Backup Data and Revoke its Google Drive Access
+            </div>
+            <p class="text-gray-500 text-lg">Detailed guide for managing SpendRep's backup and connection settings.</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Section 1: Only Delete Backup Data -->
+            <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                <h2 class="flex items-center text-xl sm:text-2xl font-bold text-blue-800 mb-4">
+                    <!-- Icon: Trash -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-blue-600">
+                        <path d="M3 6h18"></path>
+                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                    </svg>
+                    1. Delete SpendRep's Backup Data Only
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    Use this option if you want to delete **only SpendRep's backup data** stored on Google Drive, but wish to keep the connection active for future backups.
+                </p>
+                
+                <ol class="space-y-3 text-gray-800 list-none">
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step 1:</span> Open the **Settings** menu in your application.
+                    </li>
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step 2:</span> Select **"Backup data to Google Drive"**.
+                    </li>
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step 3:</span> Click the **"Delete Backup Data"** button.
+                    </li>
+                    <li class="p-3 bg-red-100 rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-red-600 mr-2">Warning:</span> This action will permanently delete your SpendRep's backup data on Google Drive.
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Section 2: Disconnect and Delete Backup Data -->
+            <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200">
+                <h2 class="flex items-center text-xl sm:text-2xl font-bold text-red-800 mb-4">
+                    <!-- Icon: Disconnect / Lock -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-red-600">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    2. Delete SpendRep's Backup Data and Disconnect Its Google Drive Access
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    This option is the most secure action. The application will **delete all SpendRep's backup data** *and* **disconnect its access** to your Google Drive, preventing future backups.
+                </p>
+
+                <ol class="space-y-3 text-gray-800 list-none">
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step 1:</span> Open the **Settings** menu in your application.
+                    </li>
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step 2:</span> Select **"Backup data to Google Drive"**.
+                    </li>
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step 3:</span> Click the **"Delete Backup Data and Disconnect from Google Drive"** button.
+                    </li>
+                    <li class="p-3 bg-red-200 rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-red-700 mr-2">Warning:</span> This action is permanent. It will permanently delete your SpendRep's backup data on Google Drive and disconnect its access.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <footer class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+            Ensure you have backed up any important data locally before performing a permanent deletion or disconnection.
+        </footer>
+    </div>
+</body>
