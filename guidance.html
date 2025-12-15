@@ -23,11 +23,11 @@
             <div class="text-3xl sm:text-4xl font-extrabold text-indigo-700 mb-2">
                 Learn How to Delete SpendRep's Backup Data and Revoke its Google Drive Access
             </div>
-            <p class="text-gray-500 text-lg">Detailed guide for managing SpendRep's backup and connection settings.</p>
+            <p class="text-gray-500 text-lg">Detailed guide for managing SpendRep's backup, connection, and account deletion settings.</p>
         </header>
 
-        <!-- Main Content Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
+        <!-- Main Content (Stacked Cards) -->
+        <div class="space-y-8">
             
             <!-- Section 1: Only Delete Backup Data -->
             <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
@@ -38,7 +38,7 @@
                         <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
                         <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
                     </svg>
-                    1. Delete SpendRep's Backup Data Only
+                    1. Delete SpendRep's Backup Data Only (Keep Connection Active)
                 </h2>
                 <p class="text-gray-700 mb-6">
                     Use this option if you want to delete **only SpendRep's backup data** stored on Google Drive, but wish to keep the connection active for future backups.
@@ -53,6 +53,9 @@
                     </li>
                     <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
                         <span class="font-semibold text-indigo-500 mr-2">Step 3:</span> Click the **"Delete Backup Data"** button.
+                    </li>
+                    <li class="p-3 bg-red-100 rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-red-600 mr-2">Note:</span> Your SpendRep account and local data will remain active.
                     </li>
                     <li class="p-3 bg-red-100 rounded-md shadow-sm border border-gray-100">
                         <span class="font-semibold text-red-600 mr-2">Warning:</span> This action will permanently delete your SpendRep's backup data on Google Drive.
@@ -71,7 +74,7 @@
                     2. Delete SpendRep's Backup Data and Disconnect Its Google Drive Access
                 </h2>
                 <p class="text-gray-700 mb-6">
-                    This option is the most secure action. The application will **delete all SpendRep's backup data** *and* **disconnect its access** to your Google Drive, preventing future backups.
+                    This action will **delete all SpendRep's backup data** *and* **disconnect its access** to your Google Drive, preventing future backups.
                 </p>
 
                 <ol class="space-y-3 text-gray-800 list-none">
@@ -89,11 +92,56 @@
                     </li>
                 </ol>
             </div>
+
+            <!-- NEW SECTION: Full Account Deletion (Serverless Model) -->
+            <div class="bg-gray-100 p-6 rounded-xl border-2 border-gray-300 shadow-lg">
+                <h2 class="flex items-center text-xl sm:text-2xl font-bold text-gray-800 mb-4">
+                    <!-- Icon: Device Reset -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-gray-600">
+                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.82"></path>
+                        <path d="M10 5.4v.4"></path>
+                        <path d="M14 5.4v.4"></path>
+                        <path d="M12 21a9 9 0 0 0 9-9"></path>
+                        <path d="M21 12h-4"></path>
+                        <path d="M16 16.4l-3-3"></path>
+                    </svg>
+                    3. Delete Your SpendRep Local Data and Profile (Full Deletion)
+                </h2>
+                <p class="text-gray-700 mb-6 font-semibold">
+                    **SpendRep is a serverless application and does not store your account or transaction data on our servers.** All your financial data is stored locally on your device or in your personal Google Drive (if backed up).
+                </p>
+
+                <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Steps for Full Deletion:</h3>
+                
+                <ol class="space-y-3 text-gray-800 list-none">
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step A:</span> **Delete Cloud Backup Data**
+                        <p class="mt-1 text-sm text-gray-600">Follow the steps in **Section 2** above to delete SpendRep's backup data and disconnect its Google Drive access.</p>
+                    </li>
+                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
+                        <span class="font-semibold text-indigo-500 mr-2">Step B:</span> **Clear Local Data and Profile**
+                        <p class="mt-1 text-sm text-gray-600">Go to your device's operating system settings and manually clear the app's storage to erase all local transactions and profile data:</p>
+                        <ul class="list-disc list-inside text-xs text-gray-600 ml-4 mt-2">
+                            <li>**Android:** Settings > Apps > SpendRep > Storage & cache > **Clear storage** (or **Clear Data**).</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2 border-t pt-4">Data Deletion Scope (Upon completing Steps A & B):</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                    <li>**Deleted:** All user-provided financial transaction data, custom categories, user settings, and unique user identifiers stored locally on the device (via Shared Preferences or local database).</li>
+                    <li>**Deleted:** All associated SpendRep's backup data on Google Drive (from Step A).</li>
+                    <li>**Retained:** No personal or financial data is retained by the developer (SpendRep).</li>
+                </ul>
+                <p class="mt-4 text-sm text-gray-600">If you require support or have questions about this process, you may email us at: <a href="mailto:jtnrdev@gmail.com" class="text-red-500 hover:underline font-bold">support@spendrep.com</a>.</p>
+            </div>
         </div>
 
         <!-- Footer Note -->
         <footer class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
             Ensure you have backed up any important data locally before performing a permanent deletion or disconnection.
         </footer>
+
     </div>
+
 </body>
