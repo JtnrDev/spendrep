@@ -1,99 +1,151 @@
+<!-- Chosen Palette: Warm Neutrals with Indigo Accents -->
+<!-- Application Structure Plan: The structure is a simple, single-column document designed for high readability on all devices. It uses semantic HTML headers to reflect the policy structure, allowing users to quickly scan and locate key information (e.g., Data Collection, Advertisements, Deletion Policy). This approach is chosen because a Privacy Policy is a text-heavy, linear document where the goal is clarity and authoritative presentation, not dynamic interaction. -->
+<!-- Visualization & Content Choices: Summary: Textual Policy -> Goal -> Authoritative Presentation -> Simple HTML/Tailwind styling -> Justification -> Clarity and legal readability are paramount, requiring a minimalist layout. Library/Method - Plain HTML/Tailwind CSS. -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn How to Delete SpendRep's Backup Data and Revoke its Google Drive Access</title>
-    <!-- Load Tailwind CSS -->
+    <title>SpendRep Privacy Policy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Set Inter font family -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
+            background-color: #f7f7f7; /* Light background */
         }
     </style>
 </head>
-<body class="p-4 sm:p-8">
+<body class="text-gray-800 antialiased min-h-screen p-4 sm:p-6 lg:p-8">
 
-    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
-        
-        <!-- Header -->
-        <header class="text-center mb-10">
-            <div class="text-3xl sm:text-4xl font-extrabold text-indigo-700 mb-2">
-                Learn How to Delete SpendRep's Backup Data and Revoke its Google Drive Access
-            </div>
-            <p class="text-gray-500 text-lg">Detailed guide for managing SpendRep's backup and connection settings.</p>
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl p-6 sm:p-10 lg:p-12">
+        <header class="mb-8 border-b pb-4 border-gray-200">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">Privacy Policy for SpendRep</h1>
+            <p class="text-sm sm:text-base text-gray-500">
+                <span class="font-semibold">Effective Date:</span> December 15, 2025
+                <span class="mx-2">|</span>
+                <span class="font-semibold">Contact Email:</span> <a href="mailto:jtnrdev@gmail.com" class="text-indigo-600 hover:text-indigo-800">jtnrdev@gmail.com</a>
+            </p>
         </header>
 
-        <!-- Main Content Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
-            
-            <!-- Section 1: Only Delete Backup Data -->
-            <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
-                <h2 class="flex items-center text-xl sm:text-2xl font-bold text-blue-800 mb-4">
-                    <!-- Icon: Trash -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-blue-600">
-                        <path d="M3 6h18"></path>
-                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
-                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
-                    </svg>
-                    1. Delete SpendRep's Backup Data Only
-                </h2>
-                <p class="text-gray-700 mb-6">
-                    Use this option if you want to delete **only SpendRep's backup data** stored on Google Drive, but wish to keep the connection active for future backups.
-                </p>
-                
-                <ol class="space-y-3 text-gray-800 list-none">
-                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-indigo-500 mr-2">Step 1:</span> Open the **Settings** menu in your application.
-                    </li>
-                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-indigo-500 mr-2">Step 2:</span> Select **"Backup data to Google Drive"**.
-                    </li>
-                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-indigo-500 mr-2">Step 3:</span> Click the **"Delete Backup Data"** button.
-                    </li>
-                    <li class="p-3 bg-red-100 rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-red-600 mr-2">Warning:</span> This action will permanently delete your SpendRep's backup data on Google Drive.
-                    </li>
-                </ol>
-            </div>
+        <section class="space-y-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 pt-2">Introduction and Data Controller</h2>
+            <p class="text-base leading-relaxed">This Privacy Policy is intended to inform users of our policies regarding the collection, use, and disclosure of information for anyone who chooses to use our app, <strong>SpendRep</strong>.</p>
+            <p class="text-base leading-relaxed"><strong>SpendRep is a serverless application.</strong> We do not operate any server infrastructure to collect, store, or process your <strong>transaction data</strong>. All your data is stored locally on your device, and any cloud backups are stored directly within your personal Google Drive account. <strong>The user remains the sole data controller of their transaction information.</strong></p>
+            <p class="text-base leading-relaxed">By using our Service, you agree to the use of information in accordance with this policy.</p>
 
-            <!-- Section 2: Disconnect and Delete Backup Data -->
-            <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200">
-                <h2 class="flex items-center text-xl sm:text-2xl font-bold text-red-800 mb-4">
-                    <!-- Icon: Disconnect / Lock -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3 text-red-600">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                    </svg>
-                    2. Delete SpendRep's Backup Data and Disconnect Its Google Drive Access
-                </h2>
-                <p class="text-gray-700 mb-6">
-                    This option is the most secure action. The application will **delete all SpendRep's backup data** *and* **disconnect its access** to your Google Drive, preventing future backups.
-                </p>
+            <!-- 1. Information We Collect and Use -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">1. Information We Collect and Use</h2>
+            <p class="text-base leading-relaxed">SpendRep is designed to prioritize local storage and user control. Information is collected only to enable the application’s core functions (logging expenses and income) and the optional Google Drive backup service.</p>
 
-                <ol class="space-y-3 text-gray-800 list-none">
-                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-indigo-500 mr-2">Step 1:</span> Open the **Settings** menu in your application.
-                    </li>
-                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-indigo-500 mr-2">Step 2:</span> Select **"Backup data to Google Drive"**.
-                    </li>
-                    <li class="p-3 bg-white rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-indigo-500 mr-2">Step 3:</span> Click the **"Delete Backup Data and Disconnect from Google Drive"** button.
-                    </li>
-                    <li class="p-3 bg-red-200 rounded-md shadow-sm border border-gray-100">
-                        <span class="font-semibold text-red-700 mr-2">Warning:</span> This action is permanent. It will permanently delete your SpendRep's backup data on Google Drive and disconnect its access.
-                    </li>
-                </ol>
-            </div>
-        </div>
+            <h3 class="text-xl font-semibold text-gray-800">A. Personal Data Collected for Google Drive Integration</h3>
+            <p class="text-base leading-relaxed">When you choose to enable the Google Drive Backup feature, you are required to sign in with your Google account. For the purpose of providing this service, the following personal identifiers are accessed and stored:</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li><strong>Google User ID:</strong> Used to authenticate your access to Google Drive.</li>
+                <li><strong>Name, Email Address, and Profile Picture:</strong> Used to personalize your profile and display who is currently signed in.</li>
+            </ul>
+            <p class="text-base leading-relaxed mt-2"><strong>Storage Location:</strong> This information is stored <strong>locally</strong> in the app's local storage (e.g., Shared Preferences/Local Storage) on your device. It is never transmitted to, collected by, or stored on SpendRep’s servers.</p>
+            <p class="text-base leading-relaxed"><strong>Use:</strong> This personal data is used strictly for authentication and to facilitate the manual or automatic backup/restore process with your personal Google Drive.</p>
 
-        <!-- Footer Note -->
-        <footer class="mt-10 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
-            Ensure you have backed up any important data locally before performing a permanent deletion or disconnection.
-        </footer>
+            <h3 class="text-xl font-semibold text-gray-800">B. User-Generated Transaction Data</h3>
+            <p class="text-base leading-relaxed">This data is the core functionality of the app and is essential for its operation.</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li><strong>Transaction Data:</strong> Expense records, income records, transaction amounts, dates, accounts, categories, and descriptive notes.</li>
+                <li><strong>User Settings:</strong> Currency preference, dark/light mode preference, notification settings, and custom category lists.</li>
+            </ul>
+            <p class="text-base leading-relaxed mt-2"><strong>Storage Location:</strong> This data is stored entirely <strong>locally</strong> in the app's private database on your device.</p>
+            <p class="text-base leading-relaxed"><strong>Use:</strong> This data is used solely within the app to:</p>
+            <ul class="list-disc ml-10 space-y-1">
+                <li>Calculate daily, monthly, and yearly balances.</li>
+                <li>Generate graphical reports (pie charts, line charts) for statistical analysis.</li>
+                <li>Customize the app interface (e.g., currency display, theme).</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800">C. Cloud Backup (User’s Google Drive)</h3>
+            <p class="text-base leading-relaxed">If you enable the backup feature, a copy of your <strong>local transaction data</strong> (Section B) is stored in a private, dedicated folder within your <strong>personal Google Drive</strong>.</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>SpendRep <strong>does not</strong> access, view, or manage this backup data on your Google Drive, other than to write the backup file or read it back during a restore operation, which is triggered by you.</li>
+                <li>The data is stored within your private Google Drive and remains under your control, secured by Google’s standard data protection measures.</li>
+            </ul>
+
+            <!-- 2. Log Data -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">2. Log Data</h2>
+            <p class="text-base leading-relaxed">In case of an app error or crash, we may collect data and information (through third-party services such as <strong>Google Play Console</strong>) called Log Data. This data may include:</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Device Internet Protocol (IP) address</li>
+                <li>Device name and model</li>
+                <li>Operating system version</li>
+                <li>App configuration details</li>
+                <li>Time and date of app usage</li>
+                <li>Error and crash logs</li>
+            </ul>
+            <p class="text-base leading-relaxed mt-2">This data is used strictly for debugging, troubleshooting, and app improvement purposes.</p>
+
+            <!-- 3. Advertisements (AdMob) -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">3. Advertisements (AdMob)</h2>
+            <p class="text-base leading-relaxed">To keep the App free for all users, it displays advertisements. We use the <strong>Google AdMob SDK (Software Development Kit)</strong> as our advertising provider.</p>
+            <p class="text-base leading-relaxed">Since SpendRep is <strong>not</strong> directed at children, AdMob is configured to serve personalized ads based on identifiers it collects, which may include:</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>Device identifiers (e.g., Advertising ID or Device ID)</li>
+                <li>IP address</li>
+                <li>Usage information</li>
+            </ul>
+            <p class="text-base leading-relaxed mt-2">This data is used by the AdMob SDK to:</p>
+            <ul class="list-disc ml-10 space-y-1">
+                <li>Serve interest-based advertising (personalized ads).</li>
+                <li>Limit the number of times the same ad is shown (frequency capping).</li>
+                <li>Prevent fraudulent activity.</li>
+                <li>Measure ad performance.</li>
+            </ul>
+            <p class="text-base leading-relaxed mt-2">Any data collected by the AdMob SDK is subject to the <a href="https://policies.google.com/privacy" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium underline">Google Privacy Policy</a>.</p>
+
+            <!-- 4. Cookies -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">4. Cookies</h2>
+            <p class="text-base leading-relaxed">This app's core code does not use cookies for tracking or personalization. However, integrated services necessary for app distribution or core functionality (such as <strong>Google Play Services</strong> for authentication or <strong>Google AdMob</strong> for advertising) may use cookies or similar technologies in accordance with their respective privacy policies.</p>
+
+            <!-- 5. Third-Party Services -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">5. Third-Party Services</h2>
+            <p class="text-base leading-relaxed">We do not sell, rent, or trade your personal or transaction information. The third-party services integrated into the app that handle data are:</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li><strong>Google Sign-In / Google Drive API:</strong> Used exclusively for user authentication and the optional backup/restore feature.</li>
+                <li><strong>Google AdMob:</strong> Used for displaying advertisements (see Section 3).</li>
+            </ul>
+
+            <!-- 6. Data Security and Deletion -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">6. Data Security and Deletion</h2>
+            <p class="text-base leading-relaxed">We value your trust. Since SpendRep is serverless, your data is primarily secured by the security measures of your mobile device's operating system (Android/iOS).</p>
+            <h3 class="text-xl font-semibold text-gray-800 mt-4">Data Deletion:</h3>
+            <p class="text-base leading-relaxed">To ensure complete deletion of all your data (as detailed in the in-app documentation under "Account and Data Deletion Policy"):</p>
+            <ol class="list-decimal ml-6 space-y-2">
+                <li>You must first use the in-app function to <strong>Delete Backup Data and Disconnect from Google Drive</strong> (Section 2 in the guide). This removes the cloud backup and clears your Name, Email, and Google ID from the app’s local storage.</li>
+                <li>You must then manually <strong>Clear the App's Storage</strong> via your device's operating system settings (Settings &gt; Apps &gt; SpendRep &gt; Storage &amp; cache &gt; Clear Data). This action guarantees the final removal of all local data (transaction data, local database, user settings) and ensures the complete disconnection of the app from your Google account on the device.</li>
+            </ol>
+
+            <!-- 7. Your Rights -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">7. Your Rights</h2>
+            <p class="text-base leading-relaxed">As the data controller of your own <strong>transaction information</strong>, you have the right to:</p>
+            <ul class="list-disc ml-6 space-y-2">
+                <li><strong>Access, Modify, or Delete</strong> your transaction data directly within the app at any time.</li>
+                <li><strong>Delete your cloud backup</strong> and revoke SpendRep's Google Drive access using the in-app settings.</li>
+                <li><strong>Opt-out of personalized advertising</strong> through your device's operating system settings (e.g., limit ad tracking/opt out of ad personalization).</li>
+                <li><strong>Request the deletion of all local data</strong> by following the steps outlined in Section 6 above.</li>
+            </ul>
+            <p class="text-base leading-relaxed mt-2">For any privacy-related inquiries, please contact us at jtnrdev@gmail.com.</p>
+
+            <!-- 8. Children’s Privacy -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">8. Children’s Privacy</h2>
+            <p class="text-base leading-relaxed">Our app is not targeted at children under the age of 13. We do not knowingly collect personal or account-identifying information from children. If you believe a child under 13 has provided information by mistake, please contact us immediately so we can address the situation.</p>
+
+            <!-- 9. Changes to This Privacy Policy -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">9. Changes to This Privacy Policy</h2>
+            <p class="text-base leading-relaxed">We may update this Privacy Policy from time to time to reflect changes in our practices or services. You are advised to review this page periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+            <!-- 10. Contact Us -->
+            <h2 class="text-2xl font-bold text-gray-900 pt-6 border-t border-gray-100">10. Contact Us</h2>
+            <p class="text-base leading-relaxed">For any questions or concerns about this Privacy Policy, please contact us at:</p>
+            <p class="text-base leading-relaxed mt-2">📧 <a href="mailto:jtnrdev@gmail.com" class="text-indigo-600 hover:text-indigo-800 font-medium underline">jtnrdev@gmail.com</a></p>
+        </section>
     </div>
+
 </body>
+</html>
